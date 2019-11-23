@@ -4,7 +4,8 @@
     "homepage": "https://www.drmare.com/spotify-music-converter-for-win/",
     "license": "Unknown",
     "url": "https://www.drmare.com/download/MusicConverter.exe#/dl.7z",
-    "hash": "",
+    "hash": "906fe0ddec4dbaec0ea2567c369321f948889ddfc73a76e9f83aff46a18ef58b",
+    "innosetup": true,
     "shortcuts": [
         [
             "MusicConverter.exe",
