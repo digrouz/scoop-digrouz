@@ -1,0 +1,21 @@
+{
+    "version": "2.4.2",
+    "description": "Make a movie-only or full disk copy of your DVD for personal use on a single DVD-Recordable",
+    "homepage": "https://www.dvd2one.com/",
+    "license": "Unknown",
+    "url": "https://www.dvd2one.com/newfiles/setup_dvd2one242.exe#/dl.7z"
+    "hash": ""
+    "shortcuts": [
+        [
+            dvd2one.exe",
+            "DVD2one"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.dvd2one.com/download.html",
+        "regex": "(?sm)DVD2one V([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.dvd2one.com/newfiles/setup_dvd2one$cleanversion.exe#/dl.7z"
+    }
+}
