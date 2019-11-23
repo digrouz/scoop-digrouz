@@ -3,8 +3,8 @@
     "description": "Make a movie-only or full disk copy of your DVD for personal use on a single DVD-Recordable",
     "homepage": "https://www.dvd2one.com/",
     "license": "Unknown",
-    "url": "https://www.dvd2one.com/newfiles/setup_dvd2one242.exe#/dl.7z"
-    "hash": ""
+    "url": "https://www.dvd2one.com/newfiles/setup_dvd2one242.exe#/dl.7z",
+    "hash": "",
     "shortcuts": [
         [
             dvd2one.exe",
