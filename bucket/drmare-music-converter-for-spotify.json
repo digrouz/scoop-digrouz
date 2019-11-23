@@ -1,0 +1,20 @@
+{
+    "version": "1.4.1",
+    "description": "Make a movie-only or full disk copy of your DVD for personal use on a single DVD-Recordable",
+    "homepage": "https://www.drmare.com/spotify-music-converter-for-win/",
+    "license": "Unknown",
+    "url": "https://www.drmare.com/download/MusicConverter.exe#/dl.7z",
+    "hash": "",
+    "shortcuts": [
+        [
+            "MusicConverter.exe",
+            "DRmare Music Converter for Spotify"
+        ]
+    ],
+    "checkver": {
+        "regex": "Version ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.drmare.com/download/MusicConverter.exe#/dl.7z"
+    }
+}
