@@ -9,7 +9,7 @@
     "shortcuts": [
         [
             "ConvertXtoDvd.exe",
-            "ConvertXToDVD"
+            "VSO ConvertXToDVD"
         ]
     ],
     "checkver": {
