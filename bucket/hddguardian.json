@@ -16,7 +16,10 @@
             "HDD Guardian Toolbox"
         ]
     ],
-    "checkver": "Version ([\\d.]+)",
+    "checkver": {
+	"url": "https://www.snapfiles.com/get/hddguardian.html",
+	"regex": "Version ([\\d.]+)"
+    },
     "autoupdate": {
         "url": "http://files.snapfiles.com/directdl/hddguardian_$version-portable.zip#/dl.zip"
     }
