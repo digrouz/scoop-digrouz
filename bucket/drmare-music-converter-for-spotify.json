@@ -13,7 +13,8 @@
         ]
     ],
     "checkver": {
-        "regex": "Version: ([\\d.]+)"
+    	  "url" : "https://www.drmare.com/download.html",
+        "regex": "MusicConverter.exe.*\\n.*\\n.*Version: ([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://www.drmare.com/download/MusicConverter.exe#/dl.7z"
