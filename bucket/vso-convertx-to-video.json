@@ -9,7 +9,7 @@
     "shortcuts": [
         [
             "vsoVideoConverter.exe",
-            "ConvertXToVideo Ultimate 2"
+            "VSO ConvertXToVideo Ultimate 2"
         ]
     ],
     "checkver": "Version ([\\d.]+)",
