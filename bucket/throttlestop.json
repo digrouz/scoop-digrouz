@@ -6,9 +6,11 @@
     "hash": "5bace3f6ea8256c10c198284f04fad77b21a9e218ec47b1560c4c3c8f2a49c26",
     "bin": "ThrottleStop.exe",
     "shortcuts": [
-                    "ThrottleStop.exe",
-                    "ThrottleStop"
-                ],
+        [
+            "ThrottleStop.exe",
+            "ThrottleStop"
+        ]    
+    ],
     "persist": "ThrottleStop.ini",
     "checkver": {
         "regex": "ThrottleStop_([\\d.]+).zip"
