@@ -12,6 +12,7 @@
             "Boxcryptor"
         ]
     ],
+    "persist": "Boxcryptor\app\.boxcryptor-intenals",
     "checkver": {
         "url": "https://www.boxcryptor.com/en/help/about/portable/#changelog",
         "regex": "Version ([\\d.]+)"
