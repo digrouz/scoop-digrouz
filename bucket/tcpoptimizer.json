@@ -13,6 +13,6 @@
         ]
     ],
     "checkver": {
-	  "regex": "version: .*([\\d.]+)"
+	  "regex": "version: </strong>([\\d.]+)"
     }
 }
