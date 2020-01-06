@@ -2,6 +2,7 @@
     "version": "8.70.6",
     "description": "Application designed to monitor for and correct the three main types of CPU throttling that are being used on many laptop computers.",
     "homepage": "https://www.techpowerup.com/download/techpowerup-throttlestop/",
+    "license": "Freeware",
     "url": "http://nl1-dl.techpowerup.com/files/ThrottleStop_8.70.6.zip#/dl.7z",
     "hash": "5bace3f6ea8256c10c198284f04fad77b21a9e218ec47b1560c4c3c8f2a49c26",
     "bin": "ThrottleStop.exe",
