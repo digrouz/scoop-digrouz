@@ -4,7 +4,7 @@
     "description": "program that provides an intuitive interface for tuning and optimizing your Internet connection.",
     "license": "Freeware",
     "url": "https://www.speedguide.net/files/TCPOptimizer.exe",
-    "hash": "",
+    "hash": "fccffe55df57db636d1399bfd518aa1ab53abbd8a4a845d46689d38f09b6c563",
     "bin": [ "TCPOptimizer.exe"],
     "shortcuts": [
         [
