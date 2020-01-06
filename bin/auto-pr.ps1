@@ -1,6 +1,6 @@
 param(
     # overwrite upstream param
-    [String]$upstream = "digrouz/scoop-others:master"
+    [String]$upstream = "digrouz/scoop-digrouz:master"
 )
 
 if(!$env:SCOOP_HOME) { $env:SCOOP_HOME = resolve-path (split-path (split-path (scoop which scoop))) }
