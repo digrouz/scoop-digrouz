@@ -4,7 +4,7 @@
     "homepage": "https://www.boxcryptor.com/",
     "license": "Proprietary",
     "url": "https://downloads.boxcryptor.com/boxcryptor/windowsPortable/Boxcryptor_Portable_Windows32_2.30.288.zip#dl.zip",
-    "hash": "",
+    "hash": "4f8dc0a1d2fd08c39eedac86e7400e9b746c4e83561eddaf648e609280aa2f84",
     "bin": [ "Boxcryptor Portable.exe" ],
     "shortcuts": [
         [
