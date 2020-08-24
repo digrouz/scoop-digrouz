@@ -1,13 +1,13 @@
 {
-    "version": "5.68.7820",
+    "version": "5.70.7909",
     "description": "CCleaner Professional. The number-one tool for cleaning PC. Protects privacy and makes computer faster and more secure!",
     "homepage": "https://www.ccleaner.com/ccleaner",
     "url": [
-        "https://download.ccleaner.com/ccsetup568.exe#/cosi.7z",
+        "https://download.ccleaner.com/ccsetup570.exe#/cosi.7z",
         "https://content.thewebatom.net/files/winapp2.ini"
     ],
     "hash": [
-        "65aa2e551486ece85e13885fca99520efa9f5c622bac087b4d78ab2da2a620ca",
+        "825e7adc69360a9820be17603ec93aace7e998d3278b33b16048d9452f1ba860",
         "827426c00d255b5bccfc27cafe2f5c40e776b51e0dd1d03ac37bdd32030d8f19"
     ],
     "installer": {
