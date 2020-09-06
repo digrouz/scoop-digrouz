@@ -4,7 +4,7 @@
     "description": "Lossless audio editor and recorder for MP3 files.",
     "homepage": "http://mpesch3.de",
     "license": "Freeware",
-    "url": "https://www.fosshub.com/mp3DirectCut.html?dwl=mp3DC230.exe",
+    "url": "https://www.fosshub.com/mp3DirectCut.html%3Fdwl%3Dmp3DC230.exe",
     "hash": "",
     "installer": {
         "script": [
@@ -27,7 +27,7 @@
     "persist": "mp3DirectCut.ini",
     "checkver": "Version ([\\d.]+)",
     "autoupdate": {
-        "url": "https://www.fosshub.com/mp3DirectCut.html?dwl=mp3DC$cleanVersion.exe",
+        "url": "https://www.fosshub.com/mp3DirectCut.html%3Fdwl%3Dmp3DC$cleanVersion.exe",
         "hash": {
             "url": "http://mpesch3.de",
             "regex": "checksum:\\s*$md5"
