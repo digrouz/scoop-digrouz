@@ -4,12 +4,12 @@
     "homepage": "http://www.vso-software.fr/products/downloader/vso-downloader.php",
     "license": "Proprietary",
     "url": "http://download.vso-software.fr/vso_downloader_setup.exe",
-    "hash": "",
+    "hash": "d43723398c04a04c776b72c8abcc0d84ceed9acdc79a6ecdafcd1e22a148363d",
     "innosetup": true,
     "shortcuts": [
         [
-            "DVDConverterUltimate.exe",
-            "VSO DVD Converter Ultimate 4"
+            "VsoDownloader.exe",
+            "VSO Downloader"
         ]
     ],
     "checkver": "Version ([\\d.]+)",
