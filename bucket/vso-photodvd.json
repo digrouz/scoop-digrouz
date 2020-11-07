@@ -8,8 +8,8 @@
     "innosetup": true,
     "shortcuts": [
         [
-            "VsoDownloader.exe",
-            "VSO Downloader"
+            "PhotoDVD.exe",
+            "VSO PhotoDVD"
         ]
     ],
     "checkver": "Version: ([\\d.]+)",
