@@ -1,0 +1,19 @@
+{
+    "version": "7.0.0.0",
+    "description": "Photo SlideShow Software",
+    "homepage": "https://www.vso-software.fr/products/Blindwrite/blindwrite.php",
+    "license": "Proprietary",
+    "url": "http://download.vso-software.fr/Blindwrite7_setup-avangate_588.exe",
+    "hash": "",
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "blindwirte.exe",
+            "VSO BlindWrite 7"
+        ]
+    ],
+    "checkver": "Version: ([\\d.]+)",
+    "autoupdate": {
+        "url": "http://download.vso-software.fr/Blindwrite7_setup-avangate_588.exe"
+    }
+}
