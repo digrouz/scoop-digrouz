@@ -1,0 +1,19 @@
+{
+    "version": "4.0.0.37d",
+    "description": "Photo SlideShow Software",
+    "homepage": "http://www.vso-software.fr/products/photodvd/photodvd.php",
+    "license": "Proprietary",
+    "url": "http://download.vso-software.fr/vsophotodvd4_setup.exe",
+    "hash": "",
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "VsoDownloader.exe",
+            "VSO Downloader"
+        ]
+    ],
+    "checkver": "Version: ([\\d.]+)",
+    "autoupdate": {
+        "url": "http://download.vso-software.fr/vsophotodvd4_setup.exe"
+    }
+}
