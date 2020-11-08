@@ -24,7 +24,9 @@
       "FlashFXP.ini",
       "flashfxp.key"
     ],
-
+    "post_install": [
+      "Remove-Item \"$dir\\data\", \"$dir\\mia.lib\", \"$dir\\FlashFXP5_Portable.res\", \"$dir\\FlashFXP5_Portable.exe\" -Recurse"
+    ],
     "checkver": {
       "url": "https://www.flashfxp.com/download-portable",
       "regex": "(?sm)Version:.*?(\\d).(\\d).(\\d) build ([\\d]+)",
