@@ -11,6 +11,7 @@
             "Ant Renamer"
         ]
     ],
+    "persist": "Renamer.xml",
     "checkver": "Version ([\\d.]+).*portable",
     "autoupdate": {
         "url": "http://update.antp.be/renamer/antrenamer2.zip"
