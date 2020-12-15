@@ -16,7 +16,7 @@
               "shortcuts": [
                 [
                     "xplorer2_64.exe",
-                    "xplorer²"
+                    "xplorer2 Ultimate"
                 ]
               ]
         },
@@ -32,15 +32,21 @@
               "shortcuts": [
                 [
                     "xplorer2.exe",
-                    "xplorer²"
+                    "xplorer2 Ultimate"
                 ]
               ]
         }
     },
     "pre_install": [
         "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninst*nsis\" -Recurse",
+        "if (!(Test-Path \"$dir\\Langs\")) { New-Item -Path \"$dir\\Langs\" -ItemType Directory | Out-Null }",
         "if (!(Test-Path \"$persist_dir\\X2.LIC\")) { New-Item \"$dir\\X2.LIC\" | Out-Null }",
         "if (!(Test-Path \"$persist_dir\\x2settings.ini\")) { New-Item \"$dir\\x2settings.ini\" | Out-Null }"
+    ],
+    "notes": "If you want to translate xplorer2-ultimate, just copy the wanted translation dll from Langs folder to application folder.",
+    "post_install": [
+        "Remove-Item \"$dir\\Langs\\x2t_*.dll\" -Recurse",
+        "if (!(Test-Path \"$persist_dir\\Langs\")) { Move-Item -Path \"$dir\\x2t_*.dll\" -Destination \"$dir\\Langs\"| Out-Null }"
     ],
     "persist": [
         "x2settings.ini",
