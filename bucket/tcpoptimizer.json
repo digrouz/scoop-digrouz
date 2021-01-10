@@ -1,11 +1,11 @@
 {
     "homepage": "https://www.speedguide.net/downloads.php",
-    "version": "4.1.0",
+    "version": "4.1.1",
     "description": "program that provides an intuitive interface for tuning and optimizing your Internet connection.",
     "license": "Freeware",
     "url": "https://www.speedguide.net/files/TCPOptimizer.exe",
-    "hash": "fccffe55df57db636d1399bfd518aa1ab53abbd8a4a845d46689d38f09b6c563",
-    "bin": [ "TCPOptimizer.exe"],
+    "hash": "0a49dc0d2ce725af347df632539b70afcfd22b38e285920b515143332a5511e9",
+    "bin": "TCPOptimizer.exe",
     "shortcuts": [
         [
             "TCPOptimizer.exe",
@@ -13,6 +13,9 @@
         ]
     ],
     "checkver": {
-	  "regex": "version: </strong>([\\d.]+)"
+        "regex": "version: </strong>([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.speedguide.net/files/TCPOptimizer.exe"
     }
 }
