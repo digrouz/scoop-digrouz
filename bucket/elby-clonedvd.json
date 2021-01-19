@@ -4,7 +4,7 @@
     "homepage": "https://www.elby.ch/products/clonedvd.html",
     "license": "Proprietary",
     "url": "https://www.elby.ch/download/SetupCloneDVD.exe#/dl.7z",
-    "hash": "",
+    "hash": "3fdb5ec886c4e41b2e716a0c32253dd4e82a13857c9d2c32292bf7616bee5c7a",
     "pre_install": [
         "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
         "Move-Item \"$dir\\dvd2one2.exe\" \"$dir\\dvd2one.exe\""
