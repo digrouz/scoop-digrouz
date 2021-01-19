@@ -3,12 +3,13 @@
     "description": "CloneDVD™ copies movies to create unparalleled picture quality DVD backups, whether it's the main title you're copying or the complete DVD.",
     "homepage": "https://www.elby.ch/products/clonedvd.html",
     "license": "Proprietary",
-    "url": "https://www.elby.ch/download/SetupCloneDVD.exe#/dl.7z",
+    "url": "https://www.elby.ch/download/SetupCloneDVD.exe",
     "hash": "3fdb5ec886c4e41b2e716a0c32253dd4e82a13857c9d2c32292bf7616bee5c7a",
-    "pre_install": [
-        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
-        "Move-Item \"$dir\\dvd2one2.exe\" \"$dir\\dvd2one.exe\""
-    ],
+    "installer": {
+        "script": [
+            "cmd /c \"$original_dir\\SetupCloneDVD.exe\" /S /D=\"$original_dir\""
+        ]
+    },
     "shortcuts": [
         [
             "CloneDVD.exe",
@@ -20,6 +21,6 @@
         "regex": "data-original-title=\"CloneDVD change log\">([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://www.elby.ch/download/SetupCloneDVD.exe#/dl.7z"
+        "url": "https://www.elby.ch/download/SetupCloneDVD.exe"
     }
 }
