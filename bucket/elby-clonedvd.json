@@ -5,14 +5,11 @@
     "license": "Proprietary",
     "url": "https://www.elby.ch/download/SetupCloneDVD.exe",
     "hash": "3fdb5ec886c4e41b2e716a0c32253dd4e82a13857c9d2c32292bf7616bee5c7a",
-    "installer": {
-        "script": [
-            "cmd /c \"$original_dir\\SetupCloneDVD.exe\" /S /D=\"$original_dir\""
-        ]
-    },
+    "innosetup": true,
+    "bin": "CloneDVD2.exe",
     "shortcuts": [
         [
-            "CloneDVD.exe",
+            "CloneDVD2.exe",
             "CloneDVD"
         ]
     ],
