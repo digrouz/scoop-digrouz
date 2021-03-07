@@ -1,16 +1,16 @@
 {
-    "version": "3.1.72",
+    "version": "3.1.73",
     "description": "Transfer Viber Chat History from iPhone to Android",
     "homepage": "https://www.backuptrans.com/iphone-viber-to-android-transfer.html",
     "license": "Unknown",
     "architecture": {
         "64bit": {
             "url": "https://www.backuptrans.com/download/exe/iphone-viber-to-android-transfer_x64.exe#/dl.7z",
-            "hash": "fadd5a6f4f3f1875d292880daaa2004f72b42c1f4729ab6357becf3408fb4d21"
+            "hash": "11da3c565b8898a5fed03578b15f574438b764816103a53c4a92ba342753aa60"
         },
         "32bit": {
             "url": "https://www.backuptrans.com/download/exe/iphone-viber-to-android-transfer.exe#/dl.7z",
-            "hash": "5e5f8aaaa1e9ccbb11e1562719214855787cd0e70cd256a57f9f0f15df686696"
+            "hash": "faa55da663a9459912355ff5b13c9b51507cc3d0ea4f73d21a63acbb54481991"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninst*nsis\" -Recurse",
