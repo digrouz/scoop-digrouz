@@ -1,0 +1,29 @@
+{
+    "version": "4.2.2.2",
+    "description": "Ant Movie Catalog is a free program made to manage your collection of movies on DVD, CD (VideoCD, DivX, ...) and tapes.",
+    "homepage": "http://www.antp.be/software/moviecatalog",
+    "license": "Public Domain",
+    "url": "http://update.antp.be/amc/amc_full.rar",
+    "hash": "234ab981be02d3f22e2e46c1263d81ad8c3fa556a9b2fe109b2248662430259e",
+    "shortcuts": [
+        [
+            "MovieCatalog.exe",
+            "Ant Movie Catalog"
+        ]
+    ],
+    "checkver": {
+      "url": "http://www.antp.be/software/moviecatalog/download" ,
+      "regex": "Version ([\\d.]+).*portable"
+    },
+    "pre_install": [
+        "if (!(Test-Path \"$dir\\Catalogs\")) { New-Item -Path \"$dir\\Catalogs\" -ItemType Directory | Out-Null }",
+        "if (!(Test-Path \"$persist_dir\\prefs.xml\")) { New-Item \"$dir\\prefs.xml\" | Out-Null }"
+    ],
+    "persist": [
+      "prefs.xml",
+      "Catalogs"
+    ],
+    "autoupdate": {
+        "url": "http://update.antp.be/amc/amc_full.rar"
+    }
+}
