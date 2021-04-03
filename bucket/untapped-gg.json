@@ -1,0 +1,17 @@
+{
+    "version": "1.0.2",
+    "description": "Enhance your MTG Arena experience with the Untapped.gg Companion and gain access to the best deck tracker, personal statistics and more.",
+    "homepage": "https://mtga.untapped.gg/companion",
+    "license": "Proprietary",
+    "url": "https://companion.untapped.gg/releases/Untapped.gg+Companion+Stable+Installer.exe#dl.zip",
+    "hash": "",
+    "shortcuts": [
+        [
+            "Untapped.gg Companion.exe",
+            "Untapped.gg Companion"
+        ]
+    ],
+    "autoupdate": {
+        "url": "https://companion.untapped.gg/releases/Untapped.gg+Companion+Stable+Installer.exe"
+    }
+}
