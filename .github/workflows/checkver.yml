@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: checkver-workflow
 
 # Controls when the action will run. 
 on:
@@ -10,8 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  # This workflow contains a single job called "build"
-  checkver:
+  checkver-job:
     runs-on: windows-latest
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -19,7 +18,7 @@ jobs:
       # Commands
       - name: run checkver.ps1
         run: |
-          echo Install scoop
+          echo "Install scoop"
           Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
-          echo run checkver
+          echo "run checkver"
           ./bin/checkver.ps1 -u
