@@ -1,16 +1,16 @@
 {
-    "version": "3.1.62",
+    "version": "3.1.64",
     "description": "Transfer Line Chat History from iPhone to Android",
     "homepage": "https://www.backuptrans.com/iphone-line-to-android-transfer.html",
     "license": "Unknown",
     "architecture": {
         "64bit": {
             "url": "https://www.backuptrans.com/download/exe/iphone-line-to-android-transfer_x64.exe#/dl.7z",
-            "hash": "f832ee830b08ae6dc82f8b85eba04795219d4f3a38015f0eaeccb9ca26d38c0d"
+            "hash": "b9445a61f1c6fb173eb4fde1ee682c03856cbd5595c98fcc4d3cb59e967d6d76"
         },
         "32bit": {
             "url": "https://www.backuptrans.com/download/exe/iphone-line-to-android-transfer.exe#/dl.7z",
-            "hash": "806d21ef114e31a3db316d089a45668df8a2395b40a3888ffa6b25099fa49158"
+            "hash": "81ae509bbc45ada5080656f58ec5d4f064b213c1334a2e8465fcce2d53b900f8"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninst*nsis\" -Recurse",
