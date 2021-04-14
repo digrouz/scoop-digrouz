@@ -1,6 +1,7 @@
 on:
   pull_request:
     types: [opened]
+  workflow_dispatch:
 name: Pull requests
 jobs:
   pullRequestHandler:
