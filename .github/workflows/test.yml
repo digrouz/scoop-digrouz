@@ -27,4 +27,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: run checkvers.ps1
-        run: bin/checkvers.ps1 -u
+        run: ./bin/checkvers.ps1 -u
