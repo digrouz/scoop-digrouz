@@ -25,7 +25,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: install scoop
-        run: Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+        run: 
       # Runs a single command using the runners shell
       - name: run checkver.ps1
-        run: ./bin/checkver.ps1 -u
+        run: |
+          echo Install scoop
+          Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+          echo run checkver
+          ./bin/checkver.ps1 -u
