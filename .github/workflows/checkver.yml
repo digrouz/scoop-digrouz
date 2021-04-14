@@ -20,5 +20,7 @@ jobs:
         run: |
           echo "Install scoop"
           Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+          echo "Install hub"
+          scoop install hub
           echo "run checkver"
-          ./bin/checkver.ps1 -u
+          ./bin/autopr.ps1 -r
