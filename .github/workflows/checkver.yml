@@ -23,4 +23,4 @@ jobs:
           echo "Install hub"
           scoop install hub
           echo "run auto-pr"
-          ./bin/auto-pr.ps1 -r -upstream "digrouz/scoop-digrouz:master"
+          ./bin/auto-pr.ps1 -p"
