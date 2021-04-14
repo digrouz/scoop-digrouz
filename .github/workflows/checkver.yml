@@ -22,5 +22,5 @@ jobs:
           Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
           echo "Install hub"
           scoop install hub
-          echo "run checkver"
-          ./bin/autopr.ps1 -r
+          echo "run auto-pr"
+          ./bin/auto-pr.ps1 -r
