@@ -1,12 +1,12 @@
 {
-    "version": "0.95.13",
+    "version": "0.95.13.1",
     "description": "multi-protocol instant messaging application",
     "homepage": "https://www.miranda-ng.org",
     "license": "GNU-GPL",
     "architecture": {
         "64bit": {
-            "url": "https://www.miranda-ng.org/distr/stable/miranda-ng-v0.95.13_x64.7z#/dl.7z",
-            "hash": "31882323dc9ce5cea621250c8827ba76b2d25fef1d8cfc9416bdbc75d5f37f2d",
+            "url": "https://www.miranda-ng.org/distr/stable/miranda-ng-v0.95.13.1_x64.7z#/dl.7z",
+            "hash": "800991f5e08ba61d1a72b871d06d4b8c252451ea3174a654dea6abf596bb5228",
             "bin": "Miranda64.exe",
             "shortcuts": [
                 [
@@ -16,8 +16,8 @@
             ]
         },
         "32bit": {
-            "url": "https://www.miranda-ng.org/distr/stable/miranda-ng-v0.95.13.7z#/dl.7z",
-            "hash": "dd7998f7a857454384e46e263c8fef4d9ffbe2713de5c9051ff731de369f50a4",
+            "url": "https://www.miranda-ng.org/distr/stable/miranda-ng-v0.95.13.1.7z#/dl.7z",
+            "hash": "fa571f4c05044909b6d03be5ba5ca1ba40c317d2d29537b8940b3a8e0f925344",
             "bin": "Miranda.exe",
             "shortcuts": [
                 [
