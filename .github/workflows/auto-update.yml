@@ -27,3 +27,10 @@ jobs:
           scoop install hub
           echo "run auto-pr"
           ./bin/auto-pr.ps1 -p
+      - name: run autoupdate-winapp2.ps1
+        run: |
+          echo "run autoupdate-winapp2.ps1"
+          .github\scripts\autoupdate-winapp2.ps1 
+          git commit -a -m "ccleanerpro: Update winapp2.ini hash"
+          git push
+
