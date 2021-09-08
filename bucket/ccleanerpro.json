@@ -1,57 +1,57 @@
 {
-  "version": "5.84.9126",
-  "description": "CCleaner Professional. The number-one tool for cleaning PC. Protects privacy and makes computer faster and more secure!",
-  "homepage": "https://www.ccleaner.com/ccleaner",
-  "url": [
-    "https://download.ccleaner.com/ccsetup584.exe#/cosi.7z",
-    "https://content.thewebatom.net/files/winapp2.ini"
-  ],
-  "hash": [
-    "bdc3e1f9f29969ce316b8a3a9ee4c939f832be92e59937057a8fd9c995ec43c1",
-    "AE235209415E518F734CE9DCC4FE2B2FDC90CC849EEA759B08B2ADC4627378B7"
-  ],
-  "installer": {
-    "script": [
-      "    # Create portable.dat (everytime, no need to check)",
-      "Set-Content \"$dir\\portable.dat\" '#PORTABLE#' -Encoding Ascii",
-      "    # Create ccleaner.ini",
-      "$file = 'ccleaner.ini'",
-      "if (-not (Test-Path \"$persist_dir\\$file\")) {",
-      "    Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
-      "    $CONT = @('[Options]', 'HelpImproveCCleaner=0', 'PrefsPrivacyShowOffers1stParty=0', 'PrefsPrivacyShareData1stParty=0')",
-      "    Set-Content \"$dir\\$file\" ($CONT -join \"`r`n\") -Encoding Ascii",
-      "}",
-      "    # Remove irrelevant files",
-      "    # gci because rm does not support placeholders as expected",
-      "@('$*', 'uninst.exe', 'CCUpdate.exe') | ForEach-Object { Remove-Item \"$dir\\$_\" -Force -Recurse }"
-    ]
-  },
-  "architecture": {
-    "64bit": {
-      "bin": "CCleaner64.exe",
-      "shortcuts": [
-        [
-          "CCleaner64.exe",
-          "CCleaner"
+    "version": "5.84.9143",
+    "description": "CCleaner Professional. The number-one tool for cleaning PC. Protects privacy and makes computer faster and more secure!",
+    "homepage": "https://www.ccleaner.com/ccleaner",
+    "url": [
+        "https://download.ccleaner.com/ccsetup584.exe#/cosi.7z",
+        "https://content.thewebatom.net/files/winapp2.ini"
+    ],
+    "hash": [
+        "82bf6dcf0436f738d8c41d256bae51f136d3c5f3df48ec8ef4faef1ed1e14b02",
+        "AE235209415E518F734CE9DCC4FE2B2FDC90CC849EEA759B08B2ADC4627378B7"
+    ],
+    "installer": {
+        "script": [
+            "    # Create portable.dat (everytime, no need to check)",
+            "Set-Content \"$dir\\portable.dat\" '#PORTABLE#' -Encoding Ascii",
+            "    # Create ccleaner.ini",
+            "$file = 'ccleaner.ini'",
+            "if (-not (Test-Path \"$persist_dir\\$file\")) {",
+            "    Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
+            "    $CONT = @('[Options]', 'HelpImproveCCleaner=0', 'PrefsPrivacyShowOffers1stParty=0', 'PrefsPrivacyShareData1stParty=0')",
+            "    Set-Content \"$dir\\$file\" ($CONT -join \"`r`n\") -Encoding Ascii",
+            "}",
+            "    # Remove irrelevant files",
+            "    # gci because rm does not support placeholders as expected",
+            "@('$*', 'uninst.exe', 'CCUpdate.exe') | ForEach-Object { Remove-Item \"$dir\\$_\" -Force -Recurse }"
         ]
-      ]
     },
-    "32bit": {
-      "bin": "CCleaner.exe",
-      "shortcuts": [
-        [
-          "CCleaner.exe",
-          "CCleaner"
-        ]
-      ]
+    "architecture": {
+        "64bit": {
+            "bin": "CCleaner64.exe",
+            "shortcuts": [
+                [
+                    "CCleaner64.exe",
+                    "CCleaner"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": "CCleaner.exe",
+            "shortcuts": [
+                [
+                    "CCleaner.exe",
+                    "CCleaner"
+                ]
+            ]
+        }
+    },
+    "persist": "ccleaner.ini",
+    "checkver": {
+        "url": "https://www.ccleaner.com/ccleaner/version-history",
+        "regex": "v([\\d.]+) \\(\\d+"
+    },
+    "autoupdate": {
+        "url": "https://download.ccleaner.com/ccsetup$majorVersion$minorVersion.exe#/cosi.7z"
     }
-  },
-  "persist": "ccleaner.ini",
-  "checkver": {
-    "url": "https://www.ccleaner.com/ccleaner/version-history",
-    "regex": "v([\\d.]+) \\(\\d+"
-  },
-  "autoupdate": {
-    "url": "https://download.ccleaner.com/ccsetup$majorVersion$minorVersion.exe#/cosi.7z"
-  }
 }
