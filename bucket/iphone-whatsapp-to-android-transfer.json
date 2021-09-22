@@ -1,16 +1,16 @@
 {
-    "version": "3.2.164",
+    "version": "3.2.165",
     "description": "Transfer Whatsapp Chat History from iPhone to Android",
     "homepage": "https://www.backuptrans.com/iphone-whatsapp-to-android-transfer.html",
     "license": "Unknown",
     "architecture": {
         "64bit": {
             "url": "https://www.backuptrans.com/download/exe/iphone-whatsapp-to-android-transfer_x64.exe#/dl.7z",
-            "hash": "cf2246b17ebe58662d54a37f16dab0f57d10cdcaa496f80a756cf2d695069582"
+            "hash": "24da17f4487173078eb3832ec2b41e5fd963e76ca3eee0403b91a33e148d0369"
         },
         "32bit": {
             "url": "https://www.backuptrans.com/download/exe/iphone-whatsapp-to-android-transfer.exe#/dl.7z",
-            "hash": "43d68daee86b9e692cb202a73a79b38d75b5f8e87e0aa26ca843ad35a81f4dcc"
+            "hash": "4a43bde7b164fa90253c712df47fc09f208a3fbed0a5076e157f43cadd919616"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninst*nsis\" -Recurse",
