@@ -6,11 +6,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.backuptrans.com/download/exe/android-whatsapp-transfer_x64.exe#/dl.7z",
-            "hash": ""
+            "hash": "81483ae43d8a38133c322c3c33ab067bfa4598001c3b110e683e12a2a2870cb7"
         },
         "32bit": {
             "url": "https://www.backuptrans.com/download/exe/android-whatsapp-transfer.exe#/dl.7z",
-            "hash": ""
+            "hash": "0aa29e732da288bea33f995af748b5333045aba23978add52016be02325b2edd"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninst*nsis\" -Recurse",
