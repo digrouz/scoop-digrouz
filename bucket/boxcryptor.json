@@ -1,10 +1,10 @@
 {
-    "version": "2.33.304",
+    "version": "2.34.307",
     "description": "Boxcryptor encrypts your sensitive files and folders in Dropbox, Google Drive, OneDrive and many other cloud storages. ",
     "homepage": "https://www.boxcryptor.com/",
     "license": "Proprietary",
-    "url": "https://downloads.boxcryptor.com/boxcryptor/windowsPortable/Boxcryptor_Portable_Windows32_2.33.304.zip#dl.zip",
-    "hash": "900b85f93440a97f8f367d7d5c6f0bdb47e6d03684f7150f14429951e59a2808",
+    "url": "https://downloads.boxcryptor.com/boxcryptor/windowsPortable/Boxcryptor_Portable_Windows32_2.34.307.zip#dl.zip",
+    "hash": "9fbd65f192d0167cc5f8d4ae10afef3fa63f3f31d2d4004c38f761d1aafc9023",
     "bin": "Boxcryptor Portable.exe",
     "shortcuts": [
         [
