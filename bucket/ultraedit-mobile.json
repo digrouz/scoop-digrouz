@@ -1,5 +1,5 @@
 {
-    "version": "28.00",
+    "version": "28.10",
     "description": "UltraEdit is a commercial text editor.",
     "homepage": "https://www.ultraedit.com/products/mobility",
     "license": "Proprietary",
@@ -7,35 +7,33 @@
     "architecture": {
         "64bit": {
             "url": "https://downloads.ultraedit.com/main/ue/win/portable/uep_english64.zip#/dl.7z",
-            "hash": "bfe7a60b50a74e1f7ce18e54807467b12f1752a9b96f7fcb6e566d86ba7298cd"
+            "hash": "2de94e0d7818509b4ac2b2988eab986b7d622b5493b91a09405764716d08bb4a"
         },
         "32bit": {
             "url": "https://downloads.ultraedit.com/main/ue/win/portable/uep_english.zip#/dl.7z",
-            "hash": "8a99d8cb7d7ef722c876523da7a48f1ea569081cc1ab1a029d06d5a070a3d1fb"
+            "hash": "6bb53945b787973d7199012d5c322f853e03cccc826616e2e0f479e8438b3648"
         }
     },
     "installer": {
-       "script": [
-           "7z.exe x -bb0 -bd -y \"$original_dir\\UltraEditPortable.paf.exe\" -o\"$original_dir\" > \"$original_dir\\null\""
-        ]
+        "script": "7z.exe x -bb0 -bd -y \"$original_dir\\UltraEditPortable.paf.exe\" -o\"$original_dir\" > \"$original_dir\\null\""
     },
     "checkver": {
         "url": "https://www.ultraedit.com/downloads/mobility.html",
         "regex": "(?sm)Download UltraEdit Mobile <small>v([\\d.]+) \\(released"
     },
-    "post_install": [
-        "Remove-Item \"$dir\\*PLUGINSDIR\", \"$dir\\UltraEditPortable.paf.exe\", \"$dir\\null\" -Recurse"
-      ],
+    "post_install": "Remove-Item \"$dir\\*PLUGINSDIR\", \"$dir\\UltraEditPortable.paf.exe\", \"$dir\\null\" -Recurse",
     "shortcuts": [
-      [
-        "UltraEditPortable.exe",
-        "UltraEdit Mobile"
-      ]
+        [
+            "UltraEditPortable.exe",
+            "UltraEdit Mobile"
+        ]
     ],
-    "persist": [
-       "Data"
+    "persist": "Data",
+    "notes": [
+        "If you want encounter issue downloading the binaries, make sure you are using aria2 and fix user agent to real browser one.",
+        "See https://github.com/lukesampson/scoop#multi-connection-downloads-with-aria2.",
+        "example: scoop config aria2-options \" -U 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36'\""
     ],
-    "notes": "If you want encounter issue downloading the binaries, make sure you are using aria2 and fix user agent to real browser one. \nSee https://github.com/lukesampson/scoop#multi-connection-downloads-with-aria2.\nexample: scoop config aria2-options \" -U 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36'\"",
     "autoupdate": {
         "architecture": {
             "64bit": {
