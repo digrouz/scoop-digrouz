@@ -1,7 +1,7 @@
 {
     "version": "1.9.0",
     "description": "A smart Spotify music downloader to save any Spotify songs and playlists offline",
-    "homepage": "https://www.drmare.com/spotify-music-converter-for-win/",
+    "homepage": "https://www.drmare.com/music-converter/",
     "license": "Proprietary",
     "url": "https://www.drmare.com/download/MusicConverter.exe#/dl.7z",
     "hash": "70d5b3d2af4f786ab92213d44f2f1eae29513fda2b07a0d5c1b8844316bf2a58",
@@ -9,7 +9,7 @@
     "shortcuts": [
         [
             "MusicConverter.exe",
-            "DRmare Music Converter for Spotify"
+            "DRmare Music Converter"
         ]
     ],
     "checkver": {
