@@ -23,6 +23,16 @@ jobs:
         run: |
           echo "Install scoop"
           Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+          echo "Install git 7zip and aria2"
+          scoop install aria2 7zip git
+          echo "Move to shovel"
+          scoop config SCOOP_REPO 'https://github.com/Ash258/Scoop-Core'
+          echo "Setting up user agent"
+          scoop config aria2-options " -U 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36'"
+          echo "Status scoop"
+          scoop status
+          echo "Check-in up scoop"
+          scoop checkup
           echo "Install hub"
           scoop install hub
           echo "run auto-pr"
