@@ -38,6 +38,7 @@ jobs:
           echo "Enable lessmsi as msi extractor"
           scoop config MSIEXTRACT_USE_LESSMSI $true
           echo "Enable completion"
+          New-Item -Path 'C:\Users\runneradmin\Documents\PowerShell\' -ItemType Directory
           Add-Content $PROFILE 'Import-Module ''C:\Users\runneradmin\scoop\apps\scoop\current\supporting\completion\Scoop-Completion.psd1'' -ErrorAction SilentlyContinue'
           echo "Enable shovel command"
           Get-ChildItem 'C:\Users\runneradmin\scoop\shims' -Filter 'scoop.*' | Copy-Item -Destination { Join-Path $_.Directory.FullName (($_.BaseName -replace 'scoop', 'shovel') + $_.Extension) }
