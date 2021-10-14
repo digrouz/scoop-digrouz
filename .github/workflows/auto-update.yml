@@ -28,14 +28,23 @@ jobs:
           echo "Move to shovel"
           scoop config SCOOP_REPO 'https://github.com/Ash258/Scoop-Core'
           scoop update
+          Add-MpPreference -ExclusionPath 'C:\Users\runneradmin\scoop'
+          Add-MpPreference -ExclusionPath 'C:\ProgramData\scoop'
+          [Environment]::SetEnvironmentVariable('SCOOP', 'C:\Users\runneradmin\scoop', 'User')
           echo "Setting up user agent"
           scoop config aria2-options " --quite=true -U 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36'"
+          echo "Install hub, lessmsi, wixtoolset innounp"
+          scoop install hub wixtoolset lessmsi innounp
+          echo "Enable lessmsi as msi extractor"
+          scoop config MSIEXTRACT_USE_LESSMSI $true
+          echo "Enable completion"
+          Add-Content $PROFILE 'Import-Module ''C:\Users\runneradmin\scoop\apps\scoop\current\supporting\completion\Scoop-Completion.psd1'' -ErrorAction SilentlyContinue'
+          echo "Enable shovel command"
+          Get-ChildItem 'C:\Users\runneradmin\scoop\shims' -Filter 'scoop.*' | Copy-Item -Destination { Join-Path $_.Directory.FullName (($_.BaseName -replace 'scoop', 'shovel') + $_.Extension) }
           echo "Status scoop"
           scoop status
           echo "Check-in up scoop"
           scoop checkup
-          echo "Install hub, lessmsi, wixtoolset"
-          scoop install hub wixtoolset lessmsi
           echo "run auto-pr"
           ./bin/auto-pr.ps1 -p
       - name: run autoupdate-winapp2.ps1
