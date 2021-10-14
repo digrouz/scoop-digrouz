@@ -28,6 +28,7 @@ jobs:
           echo "Move to shovel"
           scoop config SCOOP_REPO 'https://github.com/Ash258/Scoop-Core'
           scoop update
+          scoop status
           Add-MpPreference -ExclusionPath 'C:\Users\runneradmin\scoop'
           Add-MpPreference -ExclusionPath 'C:\ProgramData\scoop'
           [Environment]::SetEnvironmentVariable('SCOOP', 'C:\Users\runneradmin\scoop', 'User')
@@ -42,8 +43,6 @@ jobs:
           Add-Content $PROFILE 'Import-Module ''C:\Users\runneradmin\scoop\apps\scoop\current\supporting\completion\Scoop-Completion.psd1'' -ErrorAction SilentlyContinue'
           echo "Enable shovel command"
           Get-ChildItem 'C:\Users\runneradmin\scoop\shims' -Filter 'scoop.*' | Copy-Item -Destination { Join-Path $_.Directory.FullName (($_.BaseName -replace 'scoop', 'shovel') + $_.Extension) }
-          echo "Status scoop"
-          scoop status
           echo "Check-in up scoop"
           scoop checkup
           echo "run auto-pr"
