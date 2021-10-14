@@ -33,7 +33,7 @@ jobs:
           Add-MpPreference -ExclusionPath 'C:\ProgramData\scoop'
           [Environment]::SetEnvironmentVariable('SCOOP', 'C:\Users\runneradmin\scoop', 'User')
           echo "Setting up user agent"
-          scoop config aria2-options " --quite=true -U 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36'"
+          scoop config aria2-options " --quite=true --show-console-readout=false -U 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36'"
           echo "Install hub, lessmsi, wixtoolset innounp"
           scoop install hub wixtoolset lessmsi innounp
           echo "Enable lessmsi as msi extractor"
