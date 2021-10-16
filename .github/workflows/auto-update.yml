@@ -43,7 +43,6 @@ jobs:
           scoop checkup
           echo "run auto-pr"
           ./bin/auto-pr.ps1 -p
-          Remove-Item 'D:\temp\Test Folder' -Recurse
       - name: run autoupdate-winapp2.ps1
         run: |
           echo "run autoupdate-winapp2.ps1"
