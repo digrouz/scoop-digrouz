@@ -1,5 +1,5 @@
 {
-    "version": "76",
+    "version": "78",
     "description": "Wii Backup Manager is a program to work with DVD backups, FAT32, NTFS and WBFS drives to convert between DVD, ISO, CISO and WBFS. It can also extract Wii games to the format used by SNEEK.",
     "homepage": "http://www.wiibackupmanager.co.uk/home.html",
     "license": "Unknown",
@@ -16,8 +16,8 @@
         ]
     ],
     "checkver": {
-      "url": "http://www.wiibackupmanager.co.uk/latest.html" ,
-      "regex": "Wii Backup Manager Build ([\\d.]+)"
+        "url": "http://www.wiibackupmanager.co.uk/latest.html",
+        "regex": "Wii Backup Manager Build ([\\d.]+)"
     },
     "pre_install": [
         "if (!(Test-Path \"$dir\\covers\")) { New-Item -Path \"$dir\\covers\" -ItemType Directory | Out-Null }",
@@ -27,11 +27,11 @@
         "if (!(Test-Path \"$persist_dir\\wiidb.idx\")) { New-Item \"$dir\\wiitdb.idx\" | Out-Null }"
     ],
     "persist": [
-      "covers",
-      "logs",
-      "settings.ini",
-      "wiitdb.db",
-      "wiitdb.idx"
+        "covers",
+        "logs",
+        "settings.ini",
+        "wiitdb.db",
+        "wiitdb.idx"
     ],
     "autoupdate": {
         "url": "http://www.wiibackupmanager.co.uk/index.php?file=WiiBackupManager_Build$version#/dl.7z"
