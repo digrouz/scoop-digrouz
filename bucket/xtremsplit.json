@@ -21,7 +21,7 @@
     "persist": "Xtremsplit.ini",
     "checkver": {
         "url": "https://www.lesnumeriques.com/telecharger/xtremsplit-23582",
-        "regex": "\"softwareVersion\": \"([\\d.]+)\""
+        "regex": "\"softwareVersion\":\"([\\d.]+)\""
     },
     "autoupdate": {
         "url": "http://xtremsplit.free.fr/12/Xtremsplit.exe"
