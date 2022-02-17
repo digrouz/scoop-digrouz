@@ -18,8 +18,8 @@
         "script": "7z.exe x -bb0 -bd -y \"$original_dir\\UltraEditPortable.paf.exe\" -o\"$original_dir\" > \"$original_dir\\null\""
     },
     "checkver": {
-        "url": "https://www.ultraedit.com/downloads/mobility.html",
-        "regex": "(?sm)Download UltraEdit Mobile <small>v([\\d.]+) \\(released"
+        "url": "https://www.ultraedit.com/products/ultraedit/latest-changes.html",
+        "regex": "The most up-to-date version is <strong>([\\d.]+)"
     },
     "post_install": "Remove-Item \"$dir\\*PLUGINSDIR\", \"$dir\\UltraEditPortable.paf.exe\", \"$dir\\null\" -Recurse",
     "shortcuts": [

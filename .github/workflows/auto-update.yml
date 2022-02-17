@@ -34,7 +34,7 @@ jobs:
           Add-MpPreference -ExclusionPath 'C:\Users\runneradmin\scoop'
           Add-MpPreference -ExclusionPath 'C:\ProgramData\scoop'
           echo "Setting up user agent"
-          scoop config aria2-options " --quite=true --show-console-readout=false -U 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36'"
+          scoop config aria2-options " --quite=true --show-console-readout=false -U 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36'"
           echo "Enable lessmsi as msi extractor"
           scoop config MSIEXTRACT_USE_LESSMSI $true
           echo "Enable shovel command"
