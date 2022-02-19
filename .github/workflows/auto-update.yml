@@ -27,13 +27,14 @@ jobs:
           Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
           echo "Install git 7zip and aria2 hub wixtoolset lessmsi innounp"
           scoop install aria2 7zip git hub wixtoolset lessmsi innounp
-          echo "Move to shovel"
           scoop update
           scoop status
           Add-MpPreference -ExclusionPath 'C:\Users\runneradmin\scoop'
           Add-MpPreference -ExclusionPath 'C:\ProgramData\scoop'
           echo "Setting up user agent"
           scoop config aria2-options " --quite=true --show-console-readout=false -U 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36'"
+          echo "Disabling aria2"
+          scoop config aria2-enabled false
           echo "Enable lessmsi as msi extractor"
           scoop config MSIEXTRACT_USE_LESSMSI $true
           echo "Check-in up scoop"
