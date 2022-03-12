@@ -24,7 +24,8 @@ jobs:
       - name: run auto-pr.ps1
         run: |
           echo "Install scoop"
-          Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+          iwr -useb get.scoop.sh -outfile 'install.ps1'
+          .\install.ps1 -RunAsAdmin
           echo "Install git 7zip and aria2 hub wixtoolset lessmsi innounp"
           scoop install aria2 7zip git hub wixtoolset lessmsi innounp
           scoop update
