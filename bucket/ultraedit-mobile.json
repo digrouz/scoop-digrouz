@@ -1,5 +1,5 @@
 {
-    "version": "28.20",
+    "version": "2022.0",
     "description": "UltraEdit is a commercial text editor.",
     "homepage": "https://www.ultraedit.com/products/mobility",
     "license": "Proprietary",
@@ -7,11 +7,11 @@
     "architecture": {
         "64bit": {
             "url": "https://downloads.ultraedit.com/main/ue/win/portable/uep_english64.zip#/dl.7z",
-            "hash": "cf0b65069180a19afc67bb31f7e17453017af8f6f54d7a9653f59ae4c5e0eb00"
+            "hash": "10a32dcda9790bdf63791bf83362110bfe35cca7f7f733a38b183411e4f9e153"
         },
         "32bit": {
             "url": "https://downloads.ultraedit.com/main/ue/win/portable/uep_english.zip#/dl.7z",
-            "hash": "915ee65c612907e570aae3e3caeea22c37b8b6b4ec170e7c017f6ef842389a4e"
+            "hash": "dc1b2ba9f92797658b39a201e9620a1947fe67d1a95c3e29258dc9f068fb8032"
         }
     },
     "installer": {
