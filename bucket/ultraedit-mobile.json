@@ -7,7 +7,7 @@
     "architecture": {
         "64bit": {
             "url": "https://downloads.ultraedit.com/main/ue/win/portable/uep_english64.zip#/dl.7z",
-            "hash": "6b6f09368d07594ce6d4ca62cc6c6ea93306bfd5033435b02cfb7cd732b5076b"
+            "hash": "cf0b65069180a19afc67bb31f7e17453017af8f6f54d7a9653f59ae4c5e0eb00"
         },
         "32bit": {
             "url": "https://downloads.ultraedit.com/main/ue/win/portable/uep_english.zip#/dl.7z",
