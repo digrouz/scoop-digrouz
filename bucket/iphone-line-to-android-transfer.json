@@ -1,12 +1,12 @@
 {
-    "version": "3.1.87",
+    "version": "3.1.88",
     "description": "Transfer Line Chat History from iPhone to Android",
     "homepage": "https://www.backuptrans.com/iphone-line-to-android-transfer.html",
     "license": "Unknown",
     "architecture": {
         "64bit": {
             "url": "https://www.backuptrans.com/download/exe/iphone-line-to-android-transfer_x64.exe#/dl.7z",
-            "hash": "d9523027d7ddd29f3b74ec861f041c9af780afeb84a5e3d7c52f693ea2fae2c1"
+            "hash": "fe1af31b7b5bbf5611c4f429e5e8c72c485d93ca9b2a26ee27a83c8662354e7c"
         },
         "32bit": {
             "url": "https://www.backuptrans.com/download/exe/iphone-line-to-android-transfer.exe#/dl.7z",
