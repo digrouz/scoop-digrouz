@@ -11,12 +11,10 @@
             "Ant Renamer"
         ]
     ],
-    "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\Renamer.xml\")) { New-Item \"$dir\\Renamer.xml\" | Out-Null }"
-    ],
+    "pre_install": "if (!(Test-Path \"$persist_dir\\Renamer.xml\")) { New-Item \"$dir\\Renamer.xml\" | Out-Null }",
     "persist": "Renamer.xml",
     "checkver": {
-        "url": "http://www.antp.be/software/renamer/download" ,
+        "url": "http://www.antp.be/software/renamer/download",
         "regex": "Version ([\\d.]+).*portable"
     },
     "autoupdate": {

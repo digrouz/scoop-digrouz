@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://www.miranda-ng.org/distr/stable/miranda-ng-v0.95.13.1_x64.7z#/dl.7z",
-            "hash": "800991f5e08ba61d1a72b871d06d4b8c252451ea3174a654dea6abf596bb5228",
+            "hash": "4e77b5371cec3d42f2fe5d0d5b83bb529b031384f2c36ca050c72c4e372fe5e7",
             "bin": "Miranda64.exe",
             "shortcuts": [
                 [
@@ -17,7 +17,7 @@
         },
         "32bit": {
             "url": "https://www.miranda-ng.org/distr/stable/miranda-ng-v0.95.13.1.7z#/dl.7z",
-            "hash": "fa571f4c05044909b6d03be5ba5ca1ba40c317d2d29537b8940b3a8e0f925344",
+            "hash": "a65a10a6ec3f65131f6492fc93dcb4d44cc73a43e8cfdaa63338dc4bf5ac271d",
             "bin": "Miranda.exe",
             "shortcuts": [
                 [

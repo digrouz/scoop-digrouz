@@ -10,7 +10,7 @@
         },
         "32bit": {
             "url": "https://www.backuptrans.com/download/exe/android-line-to-iphone-transfer.exe#/dl.7z",
-            "hash": "19d08c3492ebfbd7cf7c8c7ab0bedc01bf4166ced87ed539d2c12bafe021db4f"
+            "hash": "4841cc4593e083ef1289b88121611dd37b90a5f3fa07a16cb43ccc8a4c9c8dd9"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninst*nsis\" -Recurse",

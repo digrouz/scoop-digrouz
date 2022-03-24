@@ -4,7 +4,7 @@
     "homepage": "http://www.vso-software.fr/products/downloader/vso-downloader.php",
     "license": "Proprietary",
     "url": "http://download.vso-software.fr/vso_downloader_setup.exe",
-    "hash": "d43723398c04a04c776b72c8abcc0d84ceed9acdc79a6ecdafcd1e22a148363d",
+    "hash": "2baf15bb444cfeb8d3c96d708a2afaa407813cbc410ca8282420b1aba7e93c37",
     "innosetup": true,
     "shortcuts": [
         [

@@ -4,7 +4,7 @@
     "homepage": "http://www.antp.be/software/moviecatalog",
     "license": "Public Domain",
     "url": "http://update.antp.be/amc/amc_full.rar",
-    "hash": "234ab981be02d3f22e2e46c1263d81ad8c3fa556a9b2fe109b2248662430259e",
+    "hash": "0f1dd763ede60fac5c13bc44b1957da1bcc003040a9002d8ab7b40e538c6cf18",
     "shortcuts": [
         [
             "MovieCatalog.exe",
@@ -12,16 +12,16 @@
         ]
     ],
     "checkver": {
-      "url": "http://www.antp.be/software/moviecatalog/download" ,
-      "regex": "Version ([\\d.]+).*portable"
+        "url": "http://www.antp.be/software/moviecatalog/download",
+        "regex": "Version ([\\d.]+).*portable"
     },
     "pre_install": [
         "if (!(Test-Path \"$dir\\Catalogs\")) { New-Item -Path \"$dir\\Catalogs\" -ItemType Directory | Out-Null }",
         "if (!(Test-Path \"$persist_dir\\prefs.xml\")) { New-Item \"$dir\\prefs.xml\" | Out-Null }"
     ],
     "persist": [
-      "prefs.xml",
-      "Catalogs"
+        "prefs.xml",
+        "Catalogs"
     ],
     "autoupdate": {
         "url": "http://update.antp.be/amc/amc_full.rar"
