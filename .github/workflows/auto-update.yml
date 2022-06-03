@@ -26,6 +26,10 @@ jobs:
           echo "Install scoop"
           iwr -useb get.scoop.sh -outfile 'install.ps1'
           .\install.ps1 -RunAsAdmin
+          scoop bucket remove main
+          scoop bucket remove extras
+          scoop bucket add main
+          scoop bucket add extras
           echo "Install git 7zip and aria2 hub wixtoolset lessmsi innounp"
           scoop install aria2 7zip git hub wixtoolset lessmsi innounp
           scoop update
