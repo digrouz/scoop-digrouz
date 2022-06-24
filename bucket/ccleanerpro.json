@@ -49,7 +49,7 @@
   "persist": "ccleaner.ini",
   "checkver": {
     "url": "https://www.ccleaner.com/ccleaner/version-history",
-    "regex": "v([\\d.]+) \\(\\d+"
+    "regex": "<span>v([\\d.]+)</span>"
   },
   "autoupdate": {
     "url": "https://download.ccleaner.com/ccsetup$majorVersion$minorVersion.exe#/cosi.7z"
