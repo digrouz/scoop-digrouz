@@ -1,16 +1,16 @@
 {
-    "version": "3.2.177",
+    "version": "3.2.178",
     "description": "Transfer Whatsapp Chat History from Android to Android",
     "homepage": "https://www.backuptrans.com/android-whatsapp-transfer.html",
     "license": "Unknown",
     "architecture": {
         "64bit": {
             "url": "https://www.backuptrans.com/download/exe/android-whatsapp-transfer_x64.exe#/dl.7z",
-            "hash": "fc3b0686ac146c73339a2ace411361e2f3623a6dbd58a031c2b0bee21cdbc181"
+            "hash": "fabd7c7347f54d34735ad7af3afd859492d258b84a3e56af224b24d8083f5601"
         },
         "32bit": {
             "url": "https://www.backuptrans.com/download/exe/android-whatsapp-transfer.exe#/dl.7z",
-            "hash": "907db492d4e70ce1c33ebb7a2ec2c2a88ffdadd4b7bf9dd1606845cb6668388f"
+            "hash": "ba1aa1f7cd8149a965a4c951ac9b3f7f6ec754f9dbf30b8905e4866ee6f72e90"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninst*nsis\" -Recurse",
