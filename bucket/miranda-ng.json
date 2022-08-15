@@ -28,8 +28,8 @@
         }
     },
     "checkver": {
-        "url": "https://www.miranda-ng.org/en/downloads/",
-        "regex": "Stable version \\(([\\d.]+)\\)"
+        "url": "https://miranda-ng.org/downloads/",
+        "regex": "Stable version<br />\\(([\\d.]+)\\)"
     },
     "persist": "Profiles",
     "autoupdate": {
