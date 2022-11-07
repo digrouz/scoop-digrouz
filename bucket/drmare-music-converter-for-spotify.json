@@ -14,7 +14,7 @@
     ],
     "checkver": {
         "url": "https://www.softpedia.com/get/Multimedia/Audio/Audio-Convertors/DRmare-Music-Converter-for-Spotify.shtml",
-        "regex": "pagetitle.* Download DRmare Music Converter for Spotify ([\\d.]+)"
+        "regex": "<title>Download DRmare Music Converter for Spotify ([\\d.]+)</title>"
     },
     "autoupdate": {
         "url": "https://www.drmare.com/download/MusicConverter.exe#/dl.7z"
