@@ -1,10 +1,10 @@
 {
-    "version": "7.0.0.76",
+    "version": "7.0.0.77",
     "description": "Convert and burn videos to watch on any DVD player.",
     "homepage": "https://www.vso-software.fr/products/convert_x_to_dvd",
     "license": "Proprietary",
-    "url": "http://download.vso-software.fr/archives/cxd/v7/vso_convertxtodvd_setup_7.0.0.76.exe",
-    "hash": "7591c5847eb1c1c0e697b9c682719ddb37e695c3e9e2363f26238252e8f90393",
+    "url": "http://download.vso-software.fr/archives/cxd/v7/vso_convertxtodvd_setup_7.0.0.77.exe",
+    "hash": "f47a860b2840e178195de0d547b245bb87c60bddde6f0ec9ca78dc8d1f248912",
     "innosetup": true,
     "shortcuts": [
         [
