@@ -1,12 +1,12 @@
 {
-    "version": "5.3.0.1",
+    "version": "5.3.0.2",
     "description": "xplorer² is a desktop file manager combining the simplicity of windows explorer with the speed and efficiency of traditional dual pane orthodox file managers, helping you be productive with your documents, pictures, music, source code and other files. ",
     "homepage": "https://www.zabkat.com",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
             "url": "https://www.zabkat.com/download.php?p=3&u=1#/dl.7z",
-            "hash": "59cda3e6bf7a6e31432ff230191ce62062a5ab17ec1d80f4dc7ea7c418d532a9",
+            "hash": "4e598dd4044954bf4dfb575b6bd515043b17aaa2af31a85dd5779265c7016a2a",
             "bin": [
                 [
                     "xplorer2_64.exe",
@@ -22,7 +22,7 @@
         },
         "32bit": {
             "url": "https://www.zabkat.com/download.php?p=1&u=1#/dl.7z",
-            "hash": "dad8087b722d1114bae582a7be31460c18c816e5a7e53ebd1cc72f077d214135",
+            "hash": "c180e2cd2abb2ebee16fd4e2762c9ef5a4c389c8a835bd1f2d9bff112a1b8c91",
             "bin": [
                 [
                     "xplorer2.exe",
